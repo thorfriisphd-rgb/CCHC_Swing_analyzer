@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environments
+.env
+.venv
+venv/
+env/
+
+# OS/editor clutter
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs and temp files
+*.log
+*.tmp
+*.bak
+*~
+
+# Runtime outputs; curated example outputs are tracked
+results/SWING_validation_summary.txt
+controls/results/within_sequence_shuffle_results.txt
+controls/results/column_shuffle_results.txt
+controls/results/random_window_results.txt
