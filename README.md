@@ -155,7 +155,7 @@ This will:
 
 ---
 
-### Generate controls only
+### Generate and run controls only
 
 ```bash
 ./run_controls.sh
