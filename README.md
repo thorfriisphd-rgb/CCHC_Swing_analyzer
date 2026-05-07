@@ -68,7 +68,6 @@ CCHC_Swing_analyzer/
 │   ├── logs/
 │   └── results/
 │
-├── docs/
 ├── results/
 │
 ├── run_pipeline.sh
