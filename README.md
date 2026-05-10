@@ -265,9 +265,7 @@ Strong convergence in the projected cassette, combined with collapse of signal u
 
 If you use this repository, please cite:
 
-> Friis, T. (2026).
-> *C12orf29 encodes IBAM (In Between Actin and Myosin), a sarcomeric protein with a conserved actomyosin binding grammar spanning ~1 billion years of evolution.*
-> bioRxiv [preprint pending].
+Friis TE. *C12orf29 encodes IBAM (In Between Actin and Myosin), a sarcomeric protein with a conserved actomyosin interaction grammar spanning approximately one billion years of evolution.* Manuscript in preparation.
 
 ---
 ## License
