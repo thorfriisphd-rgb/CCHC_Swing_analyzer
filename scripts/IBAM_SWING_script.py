@@ -36,6 +36,7 @@ import os
 import argparse
 import numpy as np
 from collections import defaultdict
+from datetime import datetime
 
 # ─────────────────────────────────────────────
 # GRANTHAM POLARITY SCORES
@@ -266,6 +267,11 @@ def main():
         help='Cross-taxon std threshold for SWING-conserved classification (default: 0.5)'
     )
     args = parser.parse_args()
+
+    # ── Timestamp ───────────────────────────────────────────────────────────────
+    timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+    print(f"Run timestamp: {timestamp}")
+    print()
 
     # ── Load cassette ──────────────────────────────────────────────────────────
     print(f"Loading cassette: {args.cassette}")

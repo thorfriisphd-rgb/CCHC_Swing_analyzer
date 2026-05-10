@@ -1,0 +1,46 @@
+==================================================
+CCHC SWING Analyzer — Run Summary
+==================================================
+
+Run timestamp:
+  2026-05-10_11-37-27
+
+Primary results directory:
+  results_2026-05-10_11-37-27
+
+Control results directory:
+  controls_2026-05-10_11-37-27
+
+Main cassette:
+  data/MG_projected_trimmed_n26_core60_chem90.fa
+
+Key findings:
+    SWING-conserved positions (cross-std < 0.5): 24 / 26
+    Invariant positions recovered by SWING:       9 / 9  (100%)
+
+Invariant tryptophan positions:
+  Pos 17: W in 26/26 taxa, cross-std = 0.190, INVARIANT
+  Pos 26: W in 26/26 taxa, cross-std = 0.190, INVARIANT
+
+Control headline results:
+
+Within-sequence shuffle:
+    SWING-conserved positions (cross-std < 0.5): 0 / 26
+    Invariant positions recovered by SWING:       0 / 0  (N/A)
+
+Column shuffle:
+    SWING-conserved positions (cross-std < 0.5): 24 / 26
+    Invariant positions recovered by SWING:       9 / 9  (100%)
+
+Random IBAM windows:
+    SWING-conserved positions (cross-std < 0.5): 0 / 26
+    Invariant positions recovered by SWING:       0 / 0  (N/A)
+
+Controls generated:
+  - Within-sequence shuffle
+  - Column shuffle
+  - Random IBAM windows
+
+Pipeline status:
+  COMPLETE
+

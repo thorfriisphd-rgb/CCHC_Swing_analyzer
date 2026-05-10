@@ -1,13 +1,22 @@
 #!/usr/bin/env python3
 import random
 from pathlib import Path
+from datetime import datetime
 
 ROOT = Path.cwd()
 MG = Path("data/MG_projected_trimmed_n26_core60_chem90.fa")
 C12 = Path("data/C12_aligned.fa")
-OUT = ROOT / "controls"
+timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+OUT = ROOT / f"controls_{timestamp}"
 
 random.seed(20260505)
+
+print(f"Run timestamp: {timestamp}")
+print()
+
+# Create standard subfolders
+(OUT / "logs").mkdir(parents=True, exist_ok=True)
+(OUT / "results").mkdir(parents=True, exist_ok=True)
 
 def read_fasta(path):
     records = []
@@ -39,7 +48,6 @@ def write_fasta(records, path):
         for name, seq in iterable:
             name = str(name).lstrip(">").strip()
             f.write(f">{name}\n{seq}\n")
-
 
 mg = read_fasta(MG)
 c12 = read_fasta(C12)
@@ -101,7 +109,9 @@ write_fasta(
 )
 
 print("Wrote controls:")
-print("  controls/01_within_sequence_shuffle/MG_n26_within_sequence_shuffled.fa")
-print("  controls/02_column_shuffle/MG_n26_column_shuffled.fa")
-print("  controls/03_random_IBAM_windows/C12_random_windows_n26.fa")
+print(f"  {OUT}/01_within_sequence_shuffle/MG_n26_within_sequence_shuffled.fa")
+print(f"  {OUT}/02_column_shuffle/MG_n26_column_shuffled.fa")
+print(f"  {OUT}/03_random_IBAM_windows/C12_random_windows_n26.fa")
+print(f"Results folder: {OUT}/results")
+print(f"Logs folder:    {OUT}/logs")
 print("Column shuffle order saved.")
