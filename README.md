@@ -1,6 +1,6 @@
 
 # CCHC-SWING-Analyzer
-Current release: v2-alpha
+Current release: v2
 
 ---
 
