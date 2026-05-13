@@ -112,7 +112,7 @@ Represents the conserved CCMHCG/C12 interaction core after dual-gate filtering:
 
 ### `MyhT_fastas/`
 
-Myosin-tail FASTA windows spanning 26 taxa.
+Myosin-tail FASTA windows spanning 25 taxa. The *Hahella chejuensis* IBAM-like outgroup interacts with human Myh7T.
 
 These represent the candidate interaction substrates evaluated against the conserved MG cassette.
 
